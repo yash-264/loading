@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+   height: 130px;
+   position: relative;
+   width: 130px;
+   border: solid whitesmoke 5px;
+   align-items: center;
+   border-radius: 50%;
+   border-top-color: blue;
+   animation: yash 1s linear infinite;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+ @keyframes yash{
+    0%{
+        transform: rotate(0deg);
+        border-top-color: blue;
+    }
+
+    50%{
+        transform: rotate(180deg);
+         border-top-color: yellow;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-top-color: red;
+    }
+ }
+ .loading{
+    color: antiquewhite;
+    position: fixed;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+ }
